@@ -1,0 +1,7 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/home/e1four15f/repos/kube/cluster/dev/slotfiller'
+let g:netrw_dirhist_2='/home/e1four15f/repos/neovim'
+let g:netrw_dirhist_3='/home/e1four15f/repos/neovim/cmake-3.17.1-Linux-x86_64'
+let g:netrw_dirhist_4='/home/e1four15f/repos/neovim/cmake-3.17.1-Linux-x86_64/bin'
+let g:netrw_dirhist_5='/home/e1four15f/repos/neovim/cmake-3.17.1-Linux-x86_64'
