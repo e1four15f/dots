@@ -179,7 +179,7 @@ command! reload :write | restart
 " program.
 
 " Pdf
-filextype *.pdf zathura %c %i &, apvlv %c, xpdf %c
+filextype *.pdf google-chrome %c, zathura %c %i &, apvlv %c, xpdf %c 
 fileviewer *.pdf
         \ vifmimg pdfpreview %px %py %pw %ph %c
         \ %pc
@@ -467,11 +467,11 @@ nnoremap gb :file &<cr>l
 nnoremap yd :!echo %d | xclip %i<cr>
 
 " Yank current file path into the clipboard
-nnoremap yf :!echo %c:p | xclip %i<cr>
+nnoremap yf :!echo %c:p | xclip %i<cr>:echo expand('%"c:p') "is yanked to clipboard"<cr>
+
+nnoremap oc :!echo %c:p | google-chrome %c:p<cr>
 
 " Mappings for faster renaming
-nnoremap I cw<c-a>
-nnoremap cc cw<c-u>
 nnoremap R cw
 
 " Open console in current directory
@@ -500,6 +500,7 @@ nnoremap M :move<cr>
 nnoremap N :mkdir<space>
 nnoremap D :delete<cr>
 nnoremap T :lstrash<cr>
+nnoremap O :file<cr>
 
 " ------------------------------------------------------------------------------
 
