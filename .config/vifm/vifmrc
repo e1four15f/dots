@@ -93,11 +93,16 @@ set suggestoptions=normal,visual,view,otherpane,keys,marks,registers
 set ignorecase
 set smartcase
 
+" Show hidden files by defaul
+
+set dotfiles
+
 " Don't highlight search results automatically
 
 set nohlsearch
 
 " Use increment searching (search while typing)
+
 set incsearch
 
 " Try to leave some space from cursor to upper/lower border in lists
