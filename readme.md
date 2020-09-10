@@ -42,5 +42,5 @@ sudo install -Dm 755 multilockscreen /usr/local/bin/multilockscreen
 cp .config ~/  -r
 betterlockscreen -l -b 0.5 -u ~/.config/lock_bg.jpg
 or 
-multilockscreen -u ~/.config/lock_bg.jpg
+multilockscreen -u ~/.config/lock_bg.jpg --off 2
 ```
