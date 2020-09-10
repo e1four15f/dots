@@ -28,7 +28,7 @@ chmod +x install-i3lock-color.sh
 
 git clone https://github.com/pavanjadhaw/betterlockscreen
 cd betterlockscreen
-cp betterlockscreen ~/usr/local/bin/
+cp betterlockscreen /usr/local/bin/
 ```
 
 
