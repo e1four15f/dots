@@ -35,4 +35,5 @@ cp betterlockscreen /usr/local/bin/
 # installation
 ```bash
 cp .config ~/  -r
+betterlockscreen -l -b 0.5 -u ~/.config/lock_bg.jpg
 ```
