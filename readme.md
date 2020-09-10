@@ -28,6 +28,12 @@ sudo ./build.sh && cd build && sudo make install
 git clone https://github.com/pavanjadhaw/betterlockscreen
 cd betterlockscreen
 cp betterlockscreen /usr/local/bin/
+
+or 
+
+git clone https://github.com/jeffmhubbard/multilockscreen
+cd multilockscreen
+sudo install -Dm 755 multilockscreen /usr/local/bin/multilockscreen
 ```
 
 
@@ -35,4 +41,6 @@ cp betterlockscreen /usr/local/bin/
 ```bash
 cp .config ~/  -r
 betterlockscreen -l -b 0.5 -u ~/.config/lock_bg.jpg
+or 
+multilockscreen -u ~/.config/lock_bg.jpg
 ```
