@@ -15,7 +15,7 @@ sudo apt-get install i3 feh rofi fonts-font-awesome python3-pip xorg-xprop zenit
 
 # Betterlockscreen
 sudo apt-get install autoconf gcc make pkg-config libpam0g-dev libcairo2-dev libfontconfig1-dev libxcb-composite0-dev libev-dev libx11-xcb-dev libxcb-xkb-dev libxcb-xinerama0-dev libxcb-randr0-dev libxcb-image0-dev libxcb-util-dev libxcb-xrm-dev libxkbcommon-dev libxkbcommon-x11-dev libjpeg-dev
-sudp apt-get install imagemagic
+sudo apt-get install imagemagic
 
 git clone https://github.com/Raymo111/i3lock-color.git
 cd i3lock-color
