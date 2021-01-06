@@ -260,8 +260,8 @@ autocmd BufWritePre *.py :%s/\s\+$//e
 set shell=/bin/bash 
 
 " Ability to add python breakpoints
-" (I use ipdb, but you can change it to whatever tool you use for debugging)
-au FileType python map <silent> <leader>b Oimport ipdb; ipdb.set_trace()<esc>
+" (I use pdb, but you can change it to whatever tool you use for debugging)
+au FileType python map <silent> <leader>b Oimport pdb; pdb.set_trace()<esc>
 
 " ============================================================================
 " Plugins settings and mappings
@@ -357,6 +357,17 @@ let g:deoplete#enable_smart_case = 1
 " complete with words from any opened file
 let g:context_filetype#same_filetypes = {}
 let g:context_filetype#same_filetypes._ = '_'
+
+" manual autocomplete
+let g:deoplete#disable_auto_complete = 1
+inoremap <silent><expr> <TAB>
+    \ pumvisible() ? "\<C-n>" :
+    \ <SID>check_back_space() ? "\<TAB>" :
+    \ deoplete#manual_complete()
+function! s:check_back_space() abort "{{{
+    let col = col('.') - 1
+    return !col || getline('.')[col - 1]  =~ '\s'
+endfunction"}}}
 
 " Jedi-vim ------------------------------
 
