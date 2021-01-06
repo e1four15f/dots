@@ -60,6 +60,8 @@ endif
 
 " Now the actual plugins:
 
+" The fancy start screen for Vim
+Plug 'mhinz/vim-startify'
 " Override configs by directory
 Plug 'arielrossanigo/dir-configs-override.vim'
 " Code commenter
