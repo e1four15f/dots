@@ -45,6 +45,9 @@ bindsym $mod+Shift+w exec "python ~/.config/i3/scripts/rename_workspace.py"
 # installed.
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
+bindsym $mod+Tab workspace next
+bindsym $mod+Shift+Tab workspace prev
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
