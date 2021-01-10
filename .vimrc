@@ -376,6 +376,7 @@ endfunction"}}}
 
 " Disable autocompletion (using deoplete instead)
 let g:jedi#completions_enabled = 0
+let g:jedi#show_call_signatures = 0
 
 " All these mappings work only for python code:
 " Go to definition
