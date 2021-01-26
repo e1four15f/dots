@@ -66,6 +66,7 @@ bindsym $mod+Shift+k move down
 bindsym $mod+Shift+l move up
 bindsym $mod+Shift+semicolon move right
 bindsym $mod+Shift+d exec "i3-dmenu-desktop"
+bindsym $mod+Shift+p exec "flameshot gui"
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
