@@ -1,0 +1,40 @@
+# 0 is too far from ` ;)
+set -g base-index 1
+
+set -g mouse off
+
+set -g status-position top
+set -g status-left ''
+set -g status-right '#[fg=colour233,bg=colour241,bold] %d/%m #[fg=colour233,bg=colour245,bold] %H:%M:%S '
+set -g status-right-length 50
+set -g status-left-length 20
+
+# Terminal junks!
+set -g default-terminal "screen-256color"
+
+# Bad Wolf
+set -g status-style fg=white,bg=colour234
+set -g window-status-activity-style bold
+set -g pane-border-style fg=colour139
+set -g pane-active-border-style fg=colour132
+set -g message-style fg=colour16,bg=colour221,bold
+
+# Custom status bar
+set -g window-status-format "#[fg=colour245,bg=colour234] #W "
+set -g window-status-current-format "#[fg=white,bg=colour132,noreverse,bold]    #W    "
+
+
+setw -g mode-keys vi
+set-option -g repeat-time 300
+set-option -g prefix C-a
+
+set -g history-limit 10000
+
+bind-key v split-window -h
+bind-key s split-window -v
+bind-key h split-window -v
+
+# pane movement
+bind-key j command-prompt -p "join pane from:"  "join-pane -s '%%'"
+bind-key s command-prompt -p "send pane to:"  "join-pane -t '%%'"
+
