@@ -34,3 +34,25 @@ function fish_prompt
 
   set_color normal
 end
+
+function envs
+  set -l file (count $argv) > /dev/null; and set file $argv[1]; or set file .env
+
+  if not test -f $file
+    echo "File '$file' not found"
+    return 1
+  end
+
+  for line in (cat $file | grep -v '^#')
+    set -l item (string split -m 1 '=' $line)
+    set -gx $item[1] $item[2]
+    echo "Exported key $item[1]"
+  end
+end
+
+function venv
+  source .venv/bin/activate.fish
+end
+
+alias python='python3'
+alias lz='lazygit'
